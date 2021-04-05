@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export const Footer = () => (
 	<footer className="footer mt-auto py-3 text-center">
 		<p>
-			Made with <i className="fa fa-heart text-danger" /> &#169; {new Date().getFullYear()}
+			Made by pirates <i className="fab fa-affiliatetheme" />
 		</p>
 	</footer>
 );

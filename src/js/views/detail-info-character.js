@@ -14,7 +14,7 @@ export function DetailInfoCharacters() {
 					<div className="row justify-content-md-center">
 						<div className="col-md-6 col-lg-5 mb-4">
 							<img
-								src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh3rDeGqhfMHdVCkogR1csg3lVCVXv5PQ09Q&usqp=CAU"
+								src="https://enterthereelworld.files.wordpress.com/2019/12/qzyuotiwrcmm-vsxs0iova5wedkdqxska3e2ffowmve.jpg"
 								style={{ width: "100%", height: "400px" }}
 							/>
 						</div>
@@ -30,9 +30,9 @@ export function DetailInfoCharacters() {
 							</div>
 						</div>
 					</div>
-					<div className="dropdown-divider border border-danger" />
+					<div className="dropdown-divider border border-info" />
 
-					<div className="row text-danger justify-content-md-center text-center mt-4">
+					<div className="row text-secundary justify-content-md-center text-center mt-4">
 						<div className="col-md-2 col-lg-1 mx-2">
 							<p>Name</p>
 							<p>{store.characters[params.characterid].name}</p>
@@ -61,7 +61,7 @@ export function DetailInfoCharacters() {
 				</>
 			)}
 			<Link to="/">
-				<Button variant="dark"> Back Home</Button>
+				<Button variant="danger"> Back Home</Button>
 			</Link>
 		</div>
 	);

@@ -18,7 +18,6 @@ const getState = ({ getStore, getActions, setStore }) => {
 							.then(responsePerson => responsePerson.json())
 							.then(personData => {
 								charactersInfo.push(personData.result.properties);
-								//setStore({ characters: charactersInfo });
 								setStore({ ...store, characters: charactersInfo });
 							})
 							.catch(error => console.log("Error: ", error));
@@ -52,14 +51,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 				const store = getStore();
 
 				if (store.favorites.includes(name)) {
-					//console.log("yes", store.favorites);
 				} else {
-					//1. Accedo a todo lo que hay en store
-					//2.Accedo al array favorito
-					//3.Accedo a todo lo que hay favoritos y le agrego name
 					setStore({ ...store, favorites: [...store.favorites, name] });
 				}
-				//console.log(store.favorites);
 			},
 			addToFavoritesPlanets: name => {
 				const store = getStore();
@@ -76,7 +70,6 @@ const getState = ({ getStore, getActions, setStore }) => {
 					return item != name;
 				});
 				setStore({ ...store, favorites: updateFavorites });
-				//console.log(updatefavorites);
 			}
 		}
 	};

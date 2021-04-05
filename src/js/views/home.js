@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import "../../styles/home.scss";
-import { CharactersCard } from "../component/charactersCard";
-import { PlanetsCard } from "../component/planetsCard";
+import { CharactersCard } from "../component/characters_Card";
+import { PlanetsCard } from "../component/planets_Card";
 import { Context } from "../store/appContext";
 
 export const Home = () => {

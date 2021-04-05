@@ -10,26 +10,26 @@ export function CharactersCard(props) {
 	return (
 		<div className="d-flex flex-nowrap overflow-auto">
 			{!store.characters
-				? "cargando"
+				? "loading..."
 				: store.characters.map((person, index) => {
 						//console.log("person", person);
 						return (
-							<div className="card custom-card test my-4" key={index}>
+							<div className="card custom-card custom-height bg-secondary test my-4" key={index}>
 								<img
 									className="card-img-top"
-									src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh3rDeGqhfMHdVCkogR1csg3lVCVXv5PQ09Q&usqp=CAU"
+									src="https://enterthereelworld.files.wordpress.com/2019/12/qzyuotiwrcmm-vsxs0iova5wedkdqxska3e2ffowmve.jpg"
 								/>
 								<div className="card-body">
 									<h5 className="card-title text-left">{person.name}</h5>
-									<div className="card-text text-left">
+									<div className="card-text text-left text-warning">
 										<p>Gender: {person.gender} </p>
 										<p>Hair Color: {person.hair_color}</p>
 										<p>Eye Color: {person.eye_color} </p>
 									</div>
 									<div className="d-flex justify-content-between">
 										<Link to={`/people/${index}`}>
-											<button className="btn btn-outline-primary" id={index}>
-												More Details!
+											<button className="btn btn-info" id={index}>
+												Learn more!
 											</button>
 										</Link>
 										<div
