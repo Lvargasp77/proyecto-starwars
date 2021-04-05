@@ -14,14 +14,14 @@ export function DetailInfoPlanet() {
 					<div className="row justify-content-md-center">
 						<div className="col-md-6 col-lg-5 mb-4">
 							<img
-								src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh3rDeGqhfMHdVCkogR1csg3lVCVXv5PQ09Q&usqp=CAU"
-								style={{ width: "100%", height: "400px" }}
+								src="https://enterthereelworld.files.wordpress.com/2019/12/qzyuotiwrcmm-vsxs0iova5wedkdqxska3e2ffowmve.jpg"
+								style={{ width: "100%", height: "300px" }}
 							/>
 						</div>
 						<div className="col-md-6 col-lg-5 text-center row mb-4">
 							<div className="align-self-center">
 								<h5>{store.planets[params.planetid].name}</h5>
-								<p>
+								<p id="character-info">
 									Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out
 									print, graphic or web designs. The passage is attributed to an unknown typesetter in
 									the 15th century who is thought to have scrambled parts of Cicero&apos;s De Finibus
@@ -30,8 +30,8 @@ export function DetailInfoPlanet() {
 							</div>
 						</div>
 					</div>
-					<div className="dropdown-divider border border-danger" />
-					<div className="row text-danger justify-content-md-center text-center mt-4">
+					<div className="dropdown-divider border border-info" />
+					<div className="row text-secundary justify-content-md-center text-center mt-4">
 						<div className="col-md-2 col-lg-1 mx-2">
 							<p>Name</p>
 							<p>{store.planets[params.planetid].name}</p>
@@ -56,7 +56,7 @@ export function DetailInfoPlanet() {
 				</>
 			)}
 			<Link to="/">
-				<Button variant="dark"> Back Home</Button>
+				<Button variant="danger"> Back</Button>
 			</Link>
 		</div>
 	);

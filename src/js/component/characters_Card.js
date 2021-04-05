@@ -5,14 +5,11 @@ import PropTypes from "prop-types";
 
 export function CharactersCard(props) {
 	const { store, actions } = useContext(Context);
-	//console.log("Fav", store.favorites);
-	//console.log(store);
 	return (
 		<div className="d-flex flex-nowrap overflow-auto">
 			{!store.characters
 				? "loading..."
 				: store.characters.map((person, index) => {
-						//console.log("person", person);
 						return (
 							<div className="card custom-card custom-height bg-secondary test my-4" key={index}>
 								<img
@@ -21,7 +18,7 @@ export function CharactersCard(props) {
 								/>
 								<div className="card-body">
 									<h5 className="card-title text-left">{person.name}</h5>
-									<div className="card-text text-left text-warning">
+									<div className="card-text text-left text-light">
 										<p>Gender: {person.gender} </p>
 										<p>Hair Color: {person.hair_color}</p>
 										<p>Eye Color: {person.eye_color} </p>

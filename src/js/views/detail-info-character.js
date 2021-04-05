@@ -15,13 +15,13 @@ export function DetailInfoCharacters() {
 						<div className="col-md-6 col-lg-5 mb-4">
 							<img
 								src="https://enterthereelworld.files.wordpress.com/2019/12/qzyuotiwrcmm-vsxs0iova5wedkdqxska3e2ffowmve.jpg"
-								style={{ width: "100%", height: "400px" }}
+								style={{ width: "100%", height: "300px" }}
 							/>
 						</div>
 						<div className="col-md-6 col-lg-5 text-center row mb-4">
 							<div className="align-self-center">
 								<h5>{store.characters[params.characterid].name}</h5>
-								<p>
+								<p id="character-info">
 									Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out
 									print, graphic or web designs. The passage is attributed to an unknown typesetter in
 									the 15th century who is thought to have scrambled parts of Cicero&apos;s De Finibus
@@ -61,7 +61,7 @@ export function DetailInfoCharacters() {
 				</>
 			)}
 			<Link to="/">
-				<Button variant="danger"> Back Home</Button>
+				<Button variant="danger"> Back</Button>
 			</Link>
 		</div>
 	);

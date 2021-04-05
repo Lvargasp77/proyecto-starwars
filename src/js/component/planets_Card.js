@@ -5,25 +5,24 @@ import PropTypes from "prop-types";
 
 export function PlanetsCard(props) {
 	const { store, actions } = useContext(Context);
-	//console.log("Fav", store.favorites);
 	return (
 		<div className="d-flex flex-nowrap overflow-auto">
 			{store.planets.map((planet, index) => {
 				return (
-					<div className="card custom-card test my-4" key={index}>
+					<div className="card custom-card custom-height bg-secondary test my-4" key={index}>
 						<img
 							className="card-img-top"
-							src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh3rDeGqhfMHdVCkogR1csg3lVCVXv5PQ09Q&usqp=CAU"
+							src="https://enterthereelworld.files.wordpress.com/2019/12/qzyuotiwrcmm-vsxs0iova5wedkdqxska3e2ffowmve.jpg"
 						/>
 						<div className="card-body">
 							<h5 className="card-title text-left">{planet.name}</h5>
-							<div className="card-text text-left">
+							<div className="card-text text-left text-light">
 								<p>Population: {planet.population}</p>
 								<p>Terrain: {planet.terrain}</p>
 							</div>
 							<div className="d-flex justify-content-between">
 								<Link to={`/planet/${index}`}>
-									<button className="btn btn-outline-primary">More Details!</button>
+									<button className="btn btn-info">More Details!</button>
 								</Link>
 								<div
 									className="favoritesContainer"

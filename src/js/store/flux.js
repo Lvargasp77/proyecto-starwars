@@ -22,7 +22,6 @@ const getState = ({ getStore, getActions, setStore }) => {
 							})
 							.catch(error => console.log("Error: ", error));
 					});
-					//
 					//console.log("Characters Info", charactersInfo);
 					console.log("Characters object", store.characters);
 				} else console.log("Error request: ", requestResponse.status);

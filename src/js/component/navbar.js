@@ -18,9 +18,7 @@ export const Navbar = () => {
 					/>
 				</div>
 			</Link>
-			{/*se mostrará la cantidad de objetos que hay en el arreglo favorites declarado en store */}
-			{/**Si favorites está vacío, se mostrará el mensaje Nothing here!; de lo contrario, se hará map al arreglo y se crearán NavDropdown.items por cada uno de los elementos en el favorites */}
-			<DropdownButton variant="primary" title={"Favorites " + store.favorites.length}>
+			<DropdownButton variant="info" title={"Favorites" + store.favorites.length}>
 				{store.favorites.length == 0 ? (
 					<NavDropdown.Item href="#action/3.1">Nothing here!</NavDropdown.Item>
 				) : (
@@ -29,7 +27,7 @@ export const Navbar = () => {
 							<NavDropdown.Item key={ind}>
 								{favItem}
 								<i
-									className="fas fa-trash-alt"
+									className="far fa-times-circle"
 									onClick={() => {
 										actions.deleteFavorite(favItem);
 									}}
