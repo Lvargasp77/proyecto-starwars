@@ -17,11 +17,11 @@ export const Home = () => {
 	return (
 		<div className="container mt-5">
 			<div className="row">
-				<h2>Characters</h2>
+				<h1>Characters</h1>
 			</div>
 			<CharactersCard icon={changeIconColor} />
 			<div className="row mt-5">
-				<h2>Planets</h2>
+				<h1>Planets</h1>
 			</div>
 			<PlanetsCard icon={changeIconColor} />
 		</div>

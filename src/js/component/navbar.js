@@ -8,7 +8,7 @@ export const Navbar = () => {
 	return (
 		<nav className="navbar navbar-light bg-dark mb-1">
 			<Link to="/">
-				<div className="navbar-brand mx-5" href="#">
+				<div className="navbar-brand mr-5 mx-5" href="#">
 					<img
 						src="http://pngimg.com/uploads/star_wars_logo/star_wars_logo_PNG34.png"
 						width="85"
@@ -18,9 +18,9 @@ export const Navbar = () => {
 					/>
 				</div>
 			</Link>
-			<DropdownButton variant="info" title={"Favorites" + store.favorites.length}>
+			<DropdownButton variant="info" title={"Favorites  " + store.favorites.length}>
 				{store.favorites.length == 0 ? (
-					<NavDropdown.Item href="#action/3.1">Nothing here!</NavDropdown.Item>
+					<NavDropdown.Item href=" ">Nothing here!</NavDropdown.Item>
 				) : (
 					store.favorites.map((favItem, ind) => {
 						return (
